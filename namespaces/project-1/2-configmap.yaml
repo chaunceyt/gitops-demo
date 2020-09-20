@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: configmap-demo
+  namespace: project-1
+data:
+  MYSQL_HOST: localhost
+  REDIS_HOST: localhost
