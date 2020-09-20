@@ -22,16 +22,16 @@ spec:
           - name: MYSQL_HOST
             valueFrom:
               configMapKeyRef:
-                name: configmap-demo 
+                name: project-environment-data
                 key: MYSQL_HOST
           - name: MEMCACHED_HOST
             valueFrom:
               configMapKeyRef:
-                name: configmap-demo 
+                name: project-environment-data
                 key: MEMCACHED_HOST
           - name: SOLR_HOST
             valueFrom:
               configMapKeyRef:
-                name: configmap-demo 
+                name: project-environment-data
                 key: SOLR_HOST
 
