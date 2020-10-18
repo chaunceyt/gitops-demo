@@ -2,6 +2,7 @@ apiVersion: app.k8s.io/v1beta1
 kind: Application
 metadata:
   name: "dev-webapp-team1"
+  namespace: dev-team1
   labels:
     app.kubernetes.io/name: "dev-webapp-team1"
 spec:
