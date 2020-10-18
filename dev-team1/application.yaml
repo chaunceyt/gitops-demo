@@ -13,3 +13,6 @@ spec:
     - group: apps
       kind: Deployment
   addOwnerRef: true
+  descriptor:
+    type: "dev-webapp"
+    version: "1.0.0"
