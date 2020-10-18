@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: nginx-app
+    app.kubernetes.io/name: "dev-webapp-team1"
   name: nginx-app
   namespace: dev-team1
 spec:
