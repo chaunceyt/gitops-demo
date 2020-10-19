@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: nginx-app-a
+  name: nginx-app-a
+  namespace: project-1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx-app-a
+  template:
+    metadata:
+      labels:
+        app: nginx-app-a
+    spec:
+      containers:
+      - image: nginx
+        name: nginx
+        env:
+          - name: MYSQL_HOST
+            valueFrom:
+              configMapKeyRef:
+                name: configmap-demo 
+                key: MYSQL_HOST
+          - name: REDIS_HOST
+            valueFrom:
+              configMapKeyRef:
+                name: configmap-demo 
+                key: REDIS_HOST
+
