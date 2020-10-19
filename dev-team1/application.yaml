@@ -16,7 +16,7 @@ spec:
       kind: ConfigMap
     - group: v1
       kind: Secret
-    - group: v1alpha1
+    - group: bitnami.com/v1alpha1
       kind: SealedSecret
   addOwnerRef: true
   descriptor:
