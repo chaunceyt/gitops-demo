@@ -12,6 +12,8 @@ spec:
   componentKinds:
     - group: apps
       kind: Deployment
+    - group: v1
+      kind: ConfigMap
   addOwnerRef: true
   descriptor:
     type: "dev-webapp"

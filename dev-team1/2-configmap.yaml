@@ -3,6 +3,8 @@ kind: ConfigMap
 metadata:
   creationTimestamp: null
   name: configmap-demo
+  labels:
+    app.kubernetes.io/name: "dev-webapp-team1"
   namespace: dev-team1
 data:
   MYSQL_HOST: localhost
