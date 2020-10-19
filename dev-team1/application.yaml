@@ -14,6 +14,10 @@ spec:
       kind: Deployment
     - group: v1
       kind: ConfigMap
+    - group: v1
+      kind: Secret
+    - group: v1alpha1
+      kind: SealedSecret
   addOwnerRef: true
   descriptor:
     type: "dev-webapp"
